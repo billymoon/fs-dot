@@ -51,7 +51,8 @@
   },
   "main": "./lib/index",
   "bin": {
-    "fs.mkdirp": "bin/fs.mkdirp"
+    "fs.mkdirp": "bin/fs.mkdirp",
+    "fs.clean": "bin/fs.clean"
   },
   "scripts": {
     "coverage": "istanbul cover -i 'lib/**' -x '**/__tests__/**' test.js",

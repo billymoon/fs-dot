@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+const path = require('path')
+const fs = require('fs')
+const lib = path.join(path.dirname(fs.realpathSync(__filename)), '../lib')
+const args = require('minimist')(process.argv.slice(2))
+const cli = require(lib + '/cli')
+
+if (args._.length === 1) {
+  cli.emptyDir(args._[0])
+} else {
+  console.log(`Usage:
+
+  fs.clean directory/to/be/cleaned
+`)
+}
