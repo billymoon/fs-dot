@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 
 const path = require('path')
-const fs = require('fs')
-const lib = path.join(path.dirname(fs.realpathSync(__filename)), '../lib')
-const args = require('minimist')(process.argv.slice(2))
-const cli = require(lib + '/cli')
 
-if (args._.length === 1) {
-  cli.ensureDir(args._[0])
+const fs = require('fs-extra')
+
+const args = process.argv.slice(2)
+
+if (args.length === 1) {
+  fs.ensureDirSync(args[0])
 } else {
   console.log(`Usage:
 
-  fs.mkdirp directory/to/be/created
+  fs.mkdirp directory/to/be/cleaned
 `)
 }
