@@ -12,13 +12,13 @@ Useful from npm scripts in `package.json`, for example...
 
 ## Usage
 
-  fs.mkdirp directory/to/be/created
-  fs.clean firectort/to/be/cleaned
+    fs.mkdirp directory/to/be/created
+    fs.clean firectort/to/be/cleaned
 
 For convenience, `fs-extra` is exported for programatic use, so you can import in the usual manner...
 
-  const fs = require('fs-dot')
-  // `fs` is reference to `fs-extra`
+    const fs = require('fs-dot')
+    // `fs` is reference to `fs-extra`
 
 ## Todo
 
