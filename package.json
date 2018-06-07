@@ -1,29 +1,17 @@
 {
   "name": "fs-dot",
-  "version": "4.0.2",
-  "description": "fs-dot adds cli support to fs-extra for commands such as mkdir -p, cp -r, and rm -rf.",
-  "homepage": "https://github.com/billymoon/fs-dot",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/billymoon/fs-dot"
-  },
-  "keywords": [
-    "fs"
-  ],
-  "author": "Billy Moon <billy@itaccess.org>",
-  "license": "MIT",
-  "dependencies": {
-    "fs-extra": "^4.0.2"
-  },
-  "devDependencies": {
-    "standard": "^10.0.3"
-  },
-  "main": "./index",
-  "bin": {
-    "fs.mkdirp": "bin/fs.mkdirp",
-    "fs.clean": "bin/fs.clean"
-  },
+  "version": "5.0.0",
+  "description": "",
+  "main": "fs-dot.js",
+  "bin": "fs-dot",
   "scripts": {
-    "lint": "standard"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^6.0.1",
+    "minimist": "^1.2.0"
   }
 }

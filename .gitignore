@@ -1,7 +1,4 @@
-.nyc_output/
-coverage/
-node_modules/
-
-.idea
-*.iml
-npm-debug.log
+node_modules
+*.lock
+*.log
+package-lock.json
